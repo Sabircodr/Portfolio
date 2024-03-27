@@ -1,3 +1,3 @@
 # Portfolio
-This is my portfolio website, which I have built till now only the front-end is completed...\n
+This is my portfolio website, which I have built till now only the front-end is completed...
 The rest of the project is coming soon.
