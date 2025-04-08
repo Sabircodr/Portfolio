@@ -334,6 +334,14 @@ h3.hello span
     font-size: 20px;
     color: var(--text-black-700);
 }
+.home-info span.tag-line
+{
+    font-family: 'Clicker Script';
+    margin-left: 8%;
+    margin-bottom: 70px;
+    font-size: 20px;
+    color: var(--text-black-700);
+}
 h3.my-profession
 {
     font-size: 30px;
@@ -406,6 +414,7 @@ h3.my-profession
     line-height: 25px;
     color: var(--text-black-700);
 }
+
 .about .about-content .personal-info
 {
     flex: 0 0 60%;
@@ -566,6 +575,14 @@ h3.my-profession
     text-transform: capitalize;
     color: var(--text-black-900);
 }
+.about .about-content .timeline .timeline-title-sub
+{
+    font-weight: 500;
+    font-size: 17px;
+    margin-bottom: 15px;
+    font-style: italic;
+    color: var(--text-black-900);
+}
 .about .about-content .timeline .timeline-text
 {
     line-height: 25px;
@@ -573,6 +590,20 @@ h3.my-profession
     text-align: justify;
     color: var(--text-black-700)
 }
+.about .about-content .timeline .timeline-text ul {
+    margin-top: 10px;
+    padding-left: 20px;
+    list-style-type: disc;
+    color: var(--text-black-700);
+    font-size: 16px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.about .about-content .timeline .timeline-text ul li {
+    margin-bottom: 8px;
+}
+
 /* Service */
 .service .container
 {
