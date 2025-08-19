@@ -2,503 +2,535 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!--meta http-equiv-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <!-- ==== Website Icon ===-->
-    <link rel="icon" href="images\favicon.png" type="image/png">
-    <!-- ==== CSS Files ===-->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/skins/color-1.css">
+    <title>Sabir Mallick - Portfolio</title>
+    <link rel="icon" href="data\favicon.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="themes.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!--===== Style Switcher =====-->
-    <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
-    <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
-    <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
-    <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
-    <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
-    <link rel="stylesheet" href="css/style-switcher.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body class="dark">
-    <!-- ==== Main Container Start ===-->  
-    <div class="main-container">
-        <!-- === Aside Start === -->
-        <div class="aside">
-            <div class="logo">
-                <a href="#"><span>Me S</span>abir</a>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-logo">Sabir<span style="color: rgba(255,255,255,0.8);">.</span></div>
+            <div class="loading-bars">
+                <div class="loading-bar"></div>
+                <div class="loading-bar"></div>
+                <div class="loading-bar"></div>
+                <div class="loading-bar"></div>
+                <div class="loading-bar"></div>
             </div>
-            <div class="nav-toggler">
-                <span></span>
-            </div>
-            <ul class="nav">
-                <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
-                <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
-                <li><a href="#services"><i class="fa fa-list"></i>Skills</a></li>
-                <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
-                <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
-            </ul>
-        </div>
-        <!-- === Aside End === -->
-        <!-- === Main Content Start === -->
-        <div class="main-content">
-            <!-- === Home Section Start === -->
-            <section class="home active section" id="home">
-                <div class="container">
-                    <div class="row">
-                        <div class="home-info padd-15">
-                            <h3 class="hello">Hello, my name is <span class="name">Sabir Mallick</span></h3>
-                            <h3 class="my-profession">I' m a <span class="typing">web designer</span></h3>
-                            <p>As someone who thrives on variety, I love building in AR/VR, game and app development, graphic design, and front-end web. I enjoy pushing boundaries, learning on the go, and turning scattered ideas into polished experiences. <br> <span class ="tag-line">One mind. Many mediums. Infinite curiosity.</span></p>
-                            <a href="#" class="btn">Download CV</a>
-                        </div>
-                        <div class="home-img padd-15">
-                            <img src="images/hero.jpg" alt="Sabir Mallick">
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- === Home Section End === -->
-            <!-- === About Section Start === -->
-            <section class="about section" id="about">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>About Me</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="about-content padd-15">
-                            <div class="row">
-                                <div class="about-text padd-15">
-                                    <h3>I'm <span>Sabir Mallick</span></h3>
-                                    <p>a tech-savvy creator who loves building across domains. Whether it’s designing sleek graphics, crafting immersive AR/VR environments, developing games and apps, or experimenting with front-end web interfaces — I enjoy jumping into different creative spaces and bringing ideas to life. I often work on multiple projects at once, exploring how skills from one area can inspire innovation in another. Currently pursuing a B.Tech in Computer Science and Design, I’m passionate about learning by doing, staying curious, and constantly pushing the boundaries of what I can create.</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="personal-info padd-15">
-                                    <div class="row">
-                                        <div class="info-item padd-15">
-                                            <p>Birthday : <span>25 May 2004</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Age : <span>21</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Website : <span>`coming soon`</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Email : <span>mail2me2sabir2@gmail.com</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Degree : <span>B.Tech in CSD</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Phone : <span>+91 8509950531</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>City : <span>Durgapur</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Freelance : <span>Available</span></p>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="buttons padd-15">
-                                            <a href="#contact" data-section-index="1" class="btn hire-me">Hire Me</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="skills padd-15">
-                                    <div class="row">
-                                        <div class="skill-item padd-15">
-                                            <h5>JS</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 86%;"></div>
-                                                <div class="skill-percent">86%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>Python</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 66%;"></div>
-                                                <div class="skill-percent">66%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>HTML</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 96%;"></div>
-                                                <div class="skill-percent">96%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>Bootstrap</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 76%;"></div>
-                                                <div class="skill-percent">76%</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="education padd-15">
-                                    <h3 class="title">Education</h3>
-                                    <div class="row">
-                                        <div class="timeline-box padd-15">
-                                            <div class="timeline shadow-dark">
-                                                <!-- ====== Timeline item 1 ======= -->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                       <i class="fa fa-calendar"></i> 2022 – Present 
-                                                    </h3>
-                                                    <h4 class="timeline-title">Bachelors in Computer Science and Design</h4>
-                                                    <p class="timeline-text">Dr. B. C. Roy Engineering College, Durgapur
-                                                        Currently pursuing a degree focused on blending computer science fundamentals with creative and design-driven thinking. Actively applying learned concepts in real-world projects involving AR/VR, app development, and graphic design.</p>
-                                                </div>
-                                                <!-- ====== Timeline item 2 ======= -->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                       <i class="fa fa-calendar"></i> 2022
-                                                    </h3>
-                                                    <h4 class="timeline-title">AISSCE (Class 12)</h4>
-                                                    <p class="timeline-text">Kendriya Vidyalaya, CMERI, Durgapur
-                                                        Completed higher secondary education under CBSE. Built strong foundations in mathematics and computer science, gained practical experience with Python and strengthened logical thinking and problem-solving skills through hands-on programming exercises.</p>
-                                                </div>
-                                                <!-- ====== Timeline item 3 ======= -->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                       <i class="fa fa-calendar"></i> 2020 
-                                                    </h3>
-                                                    <h4 class="timeline-title">CISCE (Class 10)</h4>
-                                                    <p class="timeline-text">Pranavananda Vidyamandir, Durgapur. Achieved 93.8% in the ICSE board exams. Developed a strong academic base and began exploring programming and design through tools like Logo, Scratch, HTML, and Java — sparking a lasting interest in building and creating with code.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="experience padd-15">
-                                    <h3 class="title">Experience</h3>
-                                    <div class="row">
-                                        <div class="timeline-box padd-15">
-                                            <div class="timeline shadow-dark">
-                                                <!-- ====== Timeline item 1 ======= -->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                       <i class="fa fa-calendar"></i> Dec 2021 – Present
-                                                    </h3>
-                                                    <h4 class="timeline-title">Private Tutor</h4>
-                                                    <h4 class="timeline-title-sub">Self-Employed, Near Home</h4>
-                                                    <div class="timeline-text">
-                                                        Offer personalized academic support in various subjects and programming languages. Designed custom lesson plans tailored to individual learning styles, leading to noticeable academic improvement. Created a supportive environment that builds student confidence and curiosity.
-                                                        <br>
-                                                        <em><strong>Key Achievements:</strong></em>
-                                                        <ul>
-                                                            <li>Designed personalized lesson plans for each student, resulting in notable academic improvement.</li>
-                                                            <li>Created a supportive learning atmosphere that boosts student confidence and motivation.</li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <!-- ====== Timeline item 2 ======= -->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                       <i class="fa fa-calendar"></i> Nov 2023 – Present 
-                                                    </h3>
-                                                    <h4 class="timeline-title">Social Maven | Co-founder in Ai4ALL</h4>
-                                                    <p class="timeline-text">Manage social media platforms and write occasional blog content for the non-profit. Also serve as an instructor and manager during internship programs, helping guide and mentor participants while handling organizational tasks and outreach efforts.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>            
-            <!-- === About Section End === -->
-            <!-- === Services Section Start === -->
-            <section class="service section" id="services">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>Skills</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <!-- =====Service item Start===== -->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-mobile-alt"></i>
-                                </div>
-                                <h4>App Development</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quae eum deleniti.</p>
-                            </div>
-                        </div>
-                        <!-- =====Service item End===== -->
-                        <!-- =====Service item Start===== -->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-laptop-code"></i>
-                                </div>
-                                <h4>Game Developer</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quae eum deleniti.</p>
-                            </div>
-                        </div>
-                        <!-- =====Service item End===== -->
-                        <!-- =====Service item Start===== -->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-palette"></i>
-                                </div>
-                                <h4>Graphics Design</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quae eum deleniti.</p>
-                            </div>
-                        </div>
-                        <!-- =====Service item End===== -->
-                        <!-- =====Service item Start===== -->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-code"></i>
-                                </div>
-                                <h4>Web Design</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quae eum deleniti.</p>
-                            </div>
-                        </div>
-                        <!-- =====Service item End===== -->
-                        <!-- =====Service item Start===== -->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-search"></i>
-                                </div>
-                                <h4>AR/VR Developer</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quae eum deleniti.</p>
-                            </div>
-                        </div>
-                        <!-- =====Service item End===== -->
-                        <!-- =====Service item Start===== -->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-bullhorn"></i>
-                                </div>
-                                <h4>Teaching</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quae eum deleniti.</p>
-                            </div>
-                        </div>
-                        <!-- =====Service item End===== -->
-                    </div>
-                </div>
-            </section>
-            <!-- === Services Section End === -->
-            <!-- === Portfolio Section Start === -->
-            <section class="portfolio section" id="portfolio">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>Portfolio</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="portfolio-heading padd-15">
-                            <h2>My Projects :</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <!--===== Portfolio Item Start=====-->
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img"><a href="https://github.com/Sabircodr/sortAlgo" target="_blank"><img src="images/proj-1.jpg" alt="Sorting Algorithms in C"></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!--===== Portfolio Item End=====-->
-                        <!--===== Portfolio Item Start=====-->
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img"><a href="https://immersiolab.onrender.com/" target="_blank"><img src="images/proj-2.jpg" alt="ImmersioLab: VR / AR Fusion for Education"></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!--===== Portfolio Item End=====-->
-                        <!--===== Portfolio Item Start=====-->
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/No images.jpg" alt="portfolio images 3">
-                                </div>
-                            </div>
-                        </div>
-                        <!--===== Portfolio Item End=====-->
-                        <!--===== Portfolio Item Start=====-->
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/No images.jpg" alt="portfolio images 4">
-                                </div>
-                            </div>
-                        </div>
-                        <!--===== Portfolio Item End=====-->
-                        <!--===== Portfolio Item Start=====-->
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/No images.jpg" alt="portfolio images 5">
-                                </div>
-                            </div>
-                        </div>
-                        <!--===== Portfolio Item End=====-->
-                        <!--===== Portfolio Item Start=====-->
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/No images.jpg" alt="portfolio images 6">
-                                </div>
-                            </div>
-                        </div>
-                        <!--===== Portfolio Item End=====-->
-                    </div>
-                    <div class="row">
-                        <div class="ongoing-projects padd-15">
-                            <h2>Ongoing Projects :</h2>
-                        </div>
-                        <div class="portfolio-items padd-15">
-                            <div class="portfolio-items-inner shadow-dark">
-                                <div class="portfolio-proj">
-                                    <p>Project 1 : <span><a class="link" href="projects/index.html">Click Me</a></span></p>
-                                </div>
-                            </div>
-                            <div class="portfolio-items-inner shadow-dark">
-                                <div class="portfolio-proj">
-                                    <p>Project 2 : <span><a class="link" href="projects/index.html">Click Me</a></span></p>
-                                </div>
-                            </div>
-                            <div class="portfolio-items-inner shadow-dark">
-                                <div class="portfolio-proj">
-                                    <p>Project 3 : <span><a class="link" href="projects/index.html">Click Me</a></span></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- === Portfolio Section End === -->
-            <!-- === Contact Section Start === -->
-            <section class="contact section" id="contact">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>Contact Me</h2>
-                        </div>
-                    </div>
-                    <h3 class="contact-title padd-15">Have You Any Questions ?</h3>
-                    <h4 class="contact-sub-title padd-15">I'M AT YOU SERVICE</h4>
-                    <div class="row">
-                        <!-- ==== Contact info item start ==== -->
-                        <div class="contact-info-item padd-15">
-                            <div class="icon"><i class="fa fa-phone"></i></div>
-                            <h4>Call Me On</h4>
-                            <p>+91 85099 50531</p>
-                        </div>
-                        <!-- ==== Contact info item end ==== -->
-                        <!-- ==== Contact info item start ==== -->
-                        <div class="contact-info-item padd-15">
-                            <div class="icon"><i class="fa fa-map-marker-alt" aria-hidden="true"></i></div>
-                            <h4>Location</h4>
-                            <p>Durgapur</p>
-                        </div>
-                        <!-- ==== Contact info item end ==== -->
-                        <!-- ==== Contact info item start ==== -->
-                        <div class="contact-info-item padd-15">
-                            <div class="icon"><i class="fa fa-envelope"></i></div>
-                            <h4>Email</h4>
-                            <p>MAIL2SABIR@GMAIL.COM</p>
-                        </div>
-                        <!-- ==== Contact info item end ==== -->
-                        <!-- ==== Contact info item start ==== -->
-                        <div class="contact-info-item padd-15">
-                            <div class="icon"><i class="fa fa-globe-europe"></i></div>
-                            <h4>Website</h4>
-                            <p>www.website,com</p>
-                        </div>
-                        <!-- ==== Contact info item end ==== -->
-                    </div>
-                    <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
-                    <h4 class="contact-sub-title padd-15">I'M VERY RESPONSIVE TO MESSAGES</h4>
-                    <!-- ==== Contact Form ==== -->
-                    <!-- <div class="row">
-                        <div class="contact-form padd-15">
-                            <div class="row">
-                                <div class="form-item col-6 padd-15">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Name">
-                                    </div>
-                                </div>
-                                <div class="form-item col-6 padd-15">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Email">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Subject">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <div class="form-group">
-                                        <textarea name="" class="form-control" id="" placeholder="Message"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <button type="submit" class="btn">Send Message</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-                </div>
-            </section>
-            <!-- === Contact Section End === -->
-        </div>
-        <!-- === Main Content End === -->
-    </div> 
-    <!-- ==== Main Container End ===-->
-    <!-- ==== Style Switcher Start ===-->
-    <div class="style-switcher">
-        <div class="style-switcher-toggler s-icon">
-            <i class="fas fa-cog fa-spin"></i>
-        </div>
-        <div class="day-night s-icon">
-            <i class="fas "></i>
-        </div>
-        <h4>Theme Colors</h4>
-        <div class="colors">
-            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
-            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
-            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
-            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
-            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+            <p>Loading Portfolio</p>
+            <div class="loading-subtitle">Crafting Digital Experiences</div>
         </div>
     </div>
-    <!-- ==== Style Switcher End ===-->  
-    <!-- ==== JS Files ===-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="js/script.js"></script>
-    <script src="js/style-switcher.js"></script>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-content">
+                <div class="logo">
+                    <h2>Sabir<span class="accent-text">.</span></h2>
+                </div>
+                
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="#home" class="nav-link active" data-section="home">
+                            <i class="fas fa-home"></i>
+                            <span>Home</span>
+                        </a></li>
+                        <li><a href="#about" class="nav-link" data-section="about">
+                            <i class="fas fa-user"></i>
+                            <span>About</span>
+                        </a></li>
+                        <li><a href="#skills" class="nav-link" data-section="skills">
+                            <i class="fas fa-code"></i>
+                            <span>Skills</span>
+                        </a></li>
+                        <li><a href="#portfolio" class="nav-link" data-section="portfolio">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Portfolio</span>
+                        </a></li>
+                        <li><a href="#contact" class="nav-link" data-section="contact">
+                            <i class="fas fa-envelope"></i>
+                            <span>Contact</span>
+                        </a></li>
+                    </ul>
+                </nav>
+
+                <div class="sidebar-footer">
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/sab1r-mallick" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Sabircodr" aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://buymeacoffee.com/sab1r" aria-label="Buy Me a Coffee" target="_blank"><i class="fas fa-mug-hot"></i></a>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-toggle" id="mobileMenuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Home Section -->
+            <section class="section active" id="home">
+                <div class="container">
+                    <div class="home-content">
+                        <div class="home-text">
+                            <div class="greeting">
+                                <span class="wave">👋</span>
+                                <span>Hello, I'm</span>
+                            </div>
+                            <h1 class="name">Sabir Mallick</h1>
+                            <div class="profession">
+                                <span>I'm a </span>
+                                <span class="typing-text" id="typingText">Web Designer</span>
+                                <span class="cursor">|</span>
+                            </div>
+                            <p class="description">
+                                As someone who thrives on variety, I love building in AR/VR, game and app development, 
+                                graphic design, and front-end web. I enjoy pushing boundaries, learning on the go, 
+                                and turning scattered ideas into polished experiences.
+                            </p>
+                            <div class="tagline">
+                                <em>One mind. Many mediums. Infinite curiosity.</em>
+                            </div>
+                            <div class="cta-buttons">
+                                <a href="#contact" class="btn btn-primary hire-me" data-section="contact">
+                                    <i class="fas fa-paper-plane"></i>
+                                    Hire Me
+                                </a>
+                                <a href="data\sabir-mallick-cv.pdf" class="btn btn-outline" download="SabirCV.pdf">
+                                    <i class="fas fa-download"></i>
+                                    Download CV
+                                </a>
+                            </div>
+                        </div>
+                        <div class="home-image">
+                            <div class="image-container">
+                                <div class="floating-shapes">
+                                    <div class="shape shape-1"></div>
+                                    <div class="shape shape-2"></div>
+                                    <div class="shape shape-3"></div>
+                                </div>
+                                <img src="data\hero.jpg" alt="Sabir Mallick" class="profile-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section class="section" id="about">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">About Me</h2>
+                        <div class="section-subtitle">Get to know me better</div>
+                    </div>
+
+                    <div class="about-content">
+                        <div class="about-text">
+                            <h3>I'm <span class="accent-text">Sabir Mallick</span></h3>
+                            <p>
+                                A tech-savvy creator who loves building across domains. Whether it's designing sleek graphics, 
+                                crafting immersive AR/VR environments, developing games and apps, or experimenting with front-end 
+                                web interfaces — I enjoy jumping into different creative spaces and bringing ideas to life.
+                            </p>
+                            <p>
+                                I often work on multiple projects at once, exploring how skills from one area can inspire 
+                                innovation in another. Currently pursuing a B.Tech in Computer Science and Design, I'm passionate 
+                                about learning by doing, staying curious, and constantly pushing the boundaries of what I can create.
+                            </p>
+                        </div>
+
+                        <div class="about-grid">
+                            <div class="personal-info">
+                                <h4>Personal Information</h4>
+                                <div class="info-grid">
+                                    <div class="info-item">
+                                        <span class="label">Birthday:</span>
+                                        <span class="value">25th May</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="label">Age:</span>
+                                        <span class="value">21</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="label">Email:</span>
+                                        <span class="value">mail2sabir4@gmail.com</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="label">Location:</span>
+                                        <span class="value">Durgapur, West Bengal</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skills-progress">
+                                <h4>Programming Skills</h4>
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <span>Python</span>
+                                        <span>96%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" data-width="96%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <span>Java</span>
+                                        <span>73%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" data-width="73%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <span>Unreal</span>
+                                        <span>76%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" data-width="76%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <span>Unity</span>
+                                        <span>68%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" data-width="68%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <span>C</span>
+                                        <span>66%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" data-width="66%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-section">
+                            <div class="education">
+                                <h4>Education</h4>
+                                <div class="timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content">
+                                            <div class="timeline-date">2022 – Present</div>
+                                            <h5>Computer Science Student</h5>
+                                            <p>Dr. B. C. Roy Engineering College</p>
+                                            <span>Currently pursuing a degree focused on blending computer science fundamentals with creative and design-driven thinking.</span>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content">
+                                            <div class="timeline-date">2022</div>
+                                            <h5>AISSCE (Class 12)</h5>
+                                            <p>Kendriya Vidyalaya, CMERI</p>
+                                            <span>Completed higher secondary education under CBSE with strong foundations in mathematics and computer science.</span>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content">
+                                            <div class="timeline-date">2020</div>
+                                            <h5>CISCE (Class 10)</h5>
+                                            <p>Pranavananda Vidyamandir</p>
+                                            <span>Achieved 93.8% in the ICSE board exams. Developed strong academic foundation.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="experience">
+                                <h4>Experience</h4>
+                                <div class="timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content">
+                                            <div class="timeline-date">Dec 2021 – Present</div>
+                                            <h5>Academic Tutor</h5>
+                                            <p>Self-Employed</p>
+                                            <span>Offer personalized academic support with custom lesson plans tailored to individual learning styles.</span>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content">
+                                            <div class="timeline-date">Nov 2023 – 2024</div>
+                                            <h5>Social Maven | Co-founder in Ai4ALL</h5>
+                                            <p>Non-profit Organization</p>
+                                            <span>Managed social media platforms and served as instructor during internship programs.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section class="section" id="skills">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">My Skills</h2>
+                        <div class="section-subtitle">What I can do for you</div>
+                    </div>
+
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h4>App Development</h4>
+                            <p>Creating mobile applications with modern frameworks and intuitive user interfaces for both iOS and Android platforms.</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-gamepad"></i>
+                            </div>
+                            <h4>Game Development</h4>
+                            <p>Designing and developing interactive games using Unity and Unreal Engine with immersive gameplay experiences.</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <h4>Graphic Design</h4>
+                            <p>Creating visually appealing graphics, logos, and brand identities with attention to modern design principles.</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                                <h4>Data Science</h4>
+                                <p>Analyzing and interpreting complex data to extract insights, build predictive models, and support data-driven decision making.</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-vr-cardboard"></i>
+                            </div>
+                            <h4>AR/VR Development</h4>
+                            <p>Creating immersive virtual and augmented reality experiences for various platforms and applications.</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                            </div>
+                            <h4>Teaching</h4>
+                            <p>Sharing knowledge through personalized tutoring and educational content creation with proven results.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Portfolio Section -->
+            <section class="section" id="portfolio">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">My Portfolio</h2>
+                        <div class="section-subtitle">Recent projects I've worked on</div>
+                    </div>
+
+                    <div class="portfolio-filter">
+                        <button class="filter-btn active" data-filter="all">All Projects</button>
+                        <button class="filter-btn" data-filter="web">Web</button>
+                        <button class="filter-btn" data-filter="app">Mobile</button>
+                        <button class="filter-btn" data-filter="game">Games</button>
+                        <button class="filter-btn" data-filter="aiml">AIML</button>
+                    </div>
+
+                    <div class="portfolio-grid">
+                        <div class="portfolio-item" data-category="all">
+                            <div class="portfolio-image">
+                                <img src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Sorting Algorithms Project">
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-info">
+                                        <h5>Sorting Algorithms in C</h5>
+                                        <p>Educational project demonstrating various sorting algorithms</p>
+                                        <div class="portfolio-links">
+                                            <a href="https://github.com/Sabircodr/sortAlgo" target="_blank" class="portfolio-link">
+                                                <i class="fas fa-external-link-alt"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item" data-category="aiml">
+                            <div class="portfolio-image">
+                                <img src="https://images.pexels.com/photos/3912956/pexels-photo-3912956.jpeg?auto=compress&cs=tinysrgb&w=500" alt="AI/ML Project">
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-info">
+                                        <h5>AI Gesture Control</h5>
+                                        <p>Automatically controls basic computer tasks using hand gestures</p>
+                                        <div class="portfolio-links">
+                                            <a href="#" class="portfolio-link">
+                                                <i class="fas fa-clock"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item" data-category="web">
+                            <div class="portfolio-image">
+                                <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=500" alt="ImmersioLab Project">
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-info">
+                                        <h5>ImmersioLab</h5>
+                                        <p>All-in-one platform featuring all the AR/VR projects developed by me and my buddies</p>
+                                        <div class="portfolio-links">
+                                            <a href="https://immersiolab.onrender.com/" target="_blank" class="portfolio-link">
+                                                <i class="fas fa-external-link-alt"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item" data-category="app">
+                            <div class="portfolio-image">
+                                <img src="https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Coming Soon Project">
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-info">
+                                        <h5>Emotion Detection</h5>
+                                        <p>Coming Soon - Exciting aiml project in development</p>
+                                        <div class="portfolio-links">
+                                            <a href="#" class="portfolio-link">
+                                                <i class="fas fa-clock"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+
+                    <div class="ongoing-projects">
+                        <h3>Ongoing Projects</h3>
+                        <div class="ongoing-grid">
+                            <div class="ongoing-item">
+                                <div class="ongoing-content">
+                                    <h5>Project Alpha</h5>
+                                    <p>Sign Language Detection using AIML</p>
+                                    <div class="progress-indicator">
+                                        <span>In Progress</span>
+                                        <div class="pulse"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ongoing-item">
+                                <div class="ongoing-content">
+                                    <h5>Project Gamma</h5>
+                                    <p>VR gaming platform using Unreal</p>
+                                    <div class="progress-indicator">
+                                        <span>In Progress</span>
+                                        <div class="pulse"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section class="section" id="contact">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Get In Touch</h2>
+                        <div class="section-subtitle">Let's work together</div>
+                    </div>
+
+                    <div class="contact-content">
+                        <div class="contact-text">
+                            <h3>Have a project in mind?</h3>
+                            <p>I'm always interested in new opportunities and exciting projects. Whether you need help with web development, app creation, or any creative digital solution, I'm here to help bring your ideas to life.</p>
+                        </div>
+
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h5>Call Me</h5>
+                                    <p>+91 85099 50531</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h5>Email Me</h5>
+                                    <p>mail2sabir4@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Style Switcher -->
+    <div class="style-switcher" id="styleSwitcher">
+        <div class="switcher-toggle" id="switcherToggle">
+            <i class="fas fa-cog"></i>
+        </div>
+        
+        <div class="switcher-content">
+            <div class="theme-toggle">
+                <button class="theme-btn" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            
+            <h4>Theme Colors</h4>
+            <div class="color-options">
+                <button class="color-option active" data-theme="blue" style="background: #3b82f6;"></button>
+                <button class="color-option" data-theme="orange" style="background: #f97316;"></button>
+                <button class="color-option" data-theme="green" style="background: #10b981;"></button>
+                <button class="color-option" data-theme="purple" style="background: #8b5cf6;"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Popup Notification -->
+    <div class="popup-overlay" id="popupOverlay"></div>
+    <div class="popup-notification" id="popupNotification">
+        <div class="popup-icon">
+            <i class="fas fa-clock"></i>
+        </div>
+        <div class="popup-title">Coming Soon!</div>
+        <div class="popup-message">This project is currently in development. Stay tuned for updates!</div>
+        <button class="popup-close" id="popupClose">Got it!</button>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
