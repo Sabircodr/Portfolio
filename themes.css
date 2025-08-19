@@ -1,0 +1,58 @@
+/* Theme Color Variations */
+:root {
+    --theme-blue-primary: #3b82f6;
+    --theme-blue-secondary: #1d4ed8;
+    --theme-blue-light: #dbeafe;
+    --theme-blue-gradient: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+    
+    --theme-orange-primary: #f97316;
+    --theme-orange-secondary: #ea580c;
+    --theme-orange-light: #fed7aa;
+    --theme-orange-gradient: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+    
+    --theme-green-primary: #10b981;
+    --theme-green-secondary: #059669;
+    --theme-green-light: #a7f3d0;
+    --theme-green-gradient: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    
+    --theme-purple-primary: #8b5cf6;
+    --theme-purple-secondary: #7c3aed;
+    --theme-purple-light: #ddd6fe;
+    --theme-purple-gradient: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+}
+
+/* Blue Theme (Default) */
+body[data-theme="blue"] {
+    --accent-primary: var(--theme-blue-primary);
+    --accent-primary-transparent: rgb(59 130 246 / 0.9);
+    --accent-secondary: var(--theme-blue-secondary);
+    --accent-light: var(--theme-blue-light);
+    --accent-gradient: var(--theme-blue-gradient);
+}
+
+/* Orange Theme */
+body[data-theme="orange"] {
+    --accent-primary: var(--theme-orange-primary);
+    --accent-primary-transparent: rgb(249 115 22 / 0.9);
+    --accent-secondary: var(--theme-orange-secondary);
+    --accent-light: var(--theme-orange-light);
+    --accent-gradient: var(--theme-orange-gradient);
+}
+
+/* Green Theme */
+body[data-theme="green"] {
+    --accent-primary: var(--theme-green-primary);
+    --accent-primary-transparent: rgb(16 185 129 / 0.9);
+    --accent-secondary: var(--theme-green-secondary);
+    --accent-light: var(--theme-green-light);
+    --accent-gradient: var(--theme-green-gradient);
+}
+
+/* Purple Theme */
+body[data-theme="purple"] {
+    --accent-primary: var(--theme-purple-primary);
+    --accent-primary-transparent: rgb(139 92 246 / 0.9);
+    --accent-secondary: var(--theme-purple-secondary);
+    --accent-light: var(--theme-purple-light);
+    --accent-gradient: var(--theme-purple-gradient);
+}
