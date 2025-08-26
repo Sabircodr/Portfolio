@@ -31,7 +31,16 @@ let typingIndex = 0;
 let isTypingForward = true;
 
 // Typing Animation
-const professions = ['Web Designer', 'Web Developer', 'Graphic Designer', 'Game Developer', 'AR/VR Developer'];
+//'Data Scientist',
+const professions = [
+    'AIML Engineer',
+    'AR/VR Developer',
+    'App Developer',
+    'Data Analyst',
+    'Game Developer',
+    'Graphic Designer',
+    'Educator'];
+    
 let professionIndex = 0;
 let charIndex = 0;
 
@@ -357,7 +366,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // Add some interactive animations
 function addInteractiveAnimations() {
     // Add hover effects to cards
-    const cards = document.querySelectorAll('.skill-card, .portfolio-item, .contact-item, .timeline-item, .ongoing-item');
+    const cards = document.querySelectorAll('.skill-card, .portfolio-item, .contact-item, .timeline-item, .planned-item');
     
     cards.forEach(card => {
         card.addEventListener('mouseenter', function() {

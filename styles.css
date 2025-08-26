@@ -1058,12 +1058,12 @@ body {
     transform: scale(1.1);
 }
 
-/* Ongoing Projects */
-.ongoing-projects {
+/* planned Projects */
+.planned-projects {
     margin-top: var(--spacing-2xl);
 }
 
-.ongoing-projects h3 {
+.planned-projects h3 {
     font-size: var(--font-size-2xl);
     font-weight: 700;
     color: var(--text-primary);
@@ -1071,13 +1071,13 @@ body {
     text-align: center;
 }
 
-.ongoing-grid {
+.planned-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: var(--spacing-lg);
 }
 
-.ongoing-item {
+.planned-item {
     background: var(--bg-secondary);
     border: 1px solid var(--border-color);
     border-radius: var(--radius-lg);
@@ -1086,19 +1086,19 @@ body {
     transition: all var(--transition-medium);
 }
 
-.ongoing-item:hover {
+.planned-item:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 20px var(--shadow-light);
 }
 
-.ongoing-content h5 {
+.planned-content h5 {
     font-size: var(--font-size-lg);
     font-weight: 700;
     color: var(--text-primary);
     margin-bottom: var(--spacing-sm);
 }
 
-.ongoing-content p {
+.planned-content p {
     color: var(--text-secondary);
     margin-bottom: var(--spacing-md);
 }
