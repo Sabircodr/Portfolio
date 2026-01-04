@@ -225,10 +225,10 @@ function showCertificateModal(certType) {
     if (data) {
         modalTitle.textContent = data.title;
 
-        // Helper to create list items
         const listItemsHTML = data.listItems.map(item => `<li>${item}</li>`).join('');
         const verificationHTML = data.verificationDetails.join('<br>');
 
+        // Inject content with specific structure for the preloader
         modalContent.innerHTML = `
             <div class="modal-header-section">
                 <div class="modal-icon-wrapper">
@@ -237,8 +237,9 @@ function showCertificateModal(certType) {
                 <h4 class="modal-cert-title">${data.title}</h4>
             </div>
 
-            <div class="modal-image-wrapper">
-                <img src="${data.image}" alt="${data.title}" class="modal-cert-image">
+            <div class="modal-image-container">
+                <div class="image-loader"></div>
+                <img src="${data.image}" alt="${data.title}" class="modal-cert-image" id="modalCertImage">
             </div>
 
             <p class="modal-description">${data.description}</p>
@@ -261,6 +262,28 @@ function showCertificateModal(certType) {
                 <p class="modal-quote">"${data.quote}"</p>
             </div>
         `;
+
+        // --- PRELOADER LOGIC ---
+        const img = document.getElementById('modalCertImage');
+        const loader = modalContent.querySelector('.image-loader');
+
+        // Function to run when image is ready
+        const imageLoaded = () => {
+            loader.style.display = 'none'; // Hide spinner
+            img.classList.add('loaded');   // Fade image in
+        };
+
+        if (img.complete) {
+            // If image is already cached, load immediately
+            imageLoaded();
+        } else {
+            // Otherwise wait for load event
+            img.onload = imageLoaded;
+            img.onerror = () => {
+                loader.style.display = 'none'; // Hide spinner on error
+                // Optional: You could display an error message here
+            };
+        }
 
         modalOverlay.classList.add('show');
         document.body.style.overflow = 'hidden';
