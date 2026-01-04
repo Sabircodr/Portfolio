@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabir Mallick - Portfolio</title>
+    <link rel="icon" href="data\favicon.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="themes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="dark">
+    <!-- Animated Background -->
+    <div class="animated-background">
+        <div class="floating-orb orb-1"></div>
+        <div class="floating-orb orb-2"></div>
+        <div class="floating-orb orb-3"></div>
+        <div class="floating-orb orb-4"></div>
+        <div class="floating-orb orb-5"></div>
+        <div class="mesh-gradient mesh-1"></div>
+        <div class="mesh-gradient mesh-2"></div>
+        <div class="mesh-gradient mesh-3"></div>
+    </div>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-logo">Sabir<span style="color: rgba(255,255,255,0.8);">.</span></div>
+            <div class="loading-bars">
+                <div class="loading-bar"></div>
+                <div class="loading-bar"></div>
+                <div class="loading-bar"></div>
+                <div class="loading-bar"></div>
+                <div class="loading-bar"></div>
+            </div>
+            <p>Loading Portfolio</p>
+            <div class="loading-subtitle">Crafting Digital Experiences</div>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar glass-panel" id="sidebar">
+            <div class="sidebar-content">
+                <div class="logo">
+                    <h2>Sabir<span class="accent-text">.</span></h2>
+                </div>
+                
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="#home" class="nav-link active" data-section="home">
+                            <i class="fas fa-home"></i>
+                            <span>Home</span>
+                        </a></li>
+                        <li><a href="#about" class="nav-link" data-section="about">
+                            <i class="fas fa-user"></i>
+                            <span>About</span>
+                        </a></li>
+                        <li><a href="#skills" class="nav-link" data-section="skills">
+                            <i class="fas fa-code"></i>
+                            <span>Skills</span>
+                        </a></li>
+                        <li><a href="#certificates" class="nav-link" data-section="certificates">
+                            <i class="fas fa-certificate"></i>
+                            <span>Certificates</span>
+                        </a></li>
+                        <li><a href="#portfolio" class="nav-link" data-section="portfolio">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Portfolio</span>
+                        </a></li>
+                        <li><a href="#contact" class="nav-link" data-section="contact">
+                            <i class="fas fa-envelope"></i>
+                            <span>Contact</span>
+                        </a></li>
+                    </ul>
+                </nav>
+
+                <div class="sidebar-footer">
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/sab1r-mallick" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Sabircodr" aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://buymeacoffee.com/sab1r" aria-label="Buy Me a Coffee" target="_blank"><i class="fas fa-mug-hot"></i></a>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-toggle glass-panel" id="mobileMenuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Home Section -->
+            <section class="section active" id="home">
+                <div class="container">
+                    <div class="home-content">
+                        <div class="home-text">
+                            <div class="greeting">
+                                <span class="wave">👋</span>
+                                <span>Hello, I'm</span>
+                            </div>
+                            <h1 class="name">Sabir Mallick</h1>
+                            <div class="profession">
+                                <span>I'm a </span>
+                                <span class="typing-text" id="typingText">Web Designer</span>
+                                <span class="cursor">|</span>
+                            </div>
+                            <p class="description">
+                                As someone who thrives on variety, I love building in AR/VR, game and app development, 
+                                graphic design, and front-end web. I enjoy pushing boundaries, learning on the go, 
+                                and turning scattered ideas into polished experiences.
+                            </p>
+                            <div class="tagline">
+                                <em>One mind. Many mediums. Infinite curiosity.</em>
+                            </div>
+                            <div class="cta-buttons">
+                                <a href="#contact" class="btn btn-primary hire-me" data-section="contact">
+                                    <i class="fas fa-paper-plane"></i>
+                                    Hire Me
+                                </a>
+                                <a href="data\sabirResume.pdf" class="btn btn-outline" download="SabirCV.pdf">
+                                    <i class="fas fa-download"></i>
+                                    Download CV
+                                </a>
+                            </div>
+                        </div>
+                        <div class="home-image">
+                            <div class="image-container glass-panel">
+                                <div class="floating-shapes">
+                                    <div class="shape shape-1"></div>
+                                    <div class="shape shape-2"></div>
+                                    <div class="shape shape-3"></div>
+                                </div>
+                                <img src="data\hero.jpg" alt="Sabir Mallick" class="profile-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section class="section" id="about">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">About Me</h2>
+                        <div class="section-subtitle">Get to know me better</div>
+                    </div>
+
+                    <div class="about-content">
+                        <div class="about-text glass-panel">
+                            <h3>I'm <span class="accent-text">Sabir Mallick</span></h3>
+                            <p>
+                                A tech-savvy creator who loves building across domains. Whether it's designing sleek graphics, 
+                                crafting immersive AR/VR environments, developing games and apps, or experimenting with front-end 
+                                web interfaces — I enjoy jumping into different creative spaces and bringing ideas to life.
+                            </p>
+                            <p>
+                                I often work on multiple projects at once, exploring how skills from one area can inspire 
+                                innovation in another. Currently pursuing a B.Tech in Computer Science and Design, I'm passionate 
+                                about learning by doing, staying curious, and constantly pushing the boundaries of what I can create.
+                            </p>
+                        </div>
+
+                        <div class="about-grid">
+                            <div class="personal-info glass-panel">
+                                <h4>Personal Information</h4>
+                                <div class="info-grid">
+                                    <div class="info-item">
+                                        <span class="label">Birthday:</span>
+                                        <span class="value">25th May</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="label">Age:</span>
+                                        <span class="value">21</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="label">Email:</span>
+                                        <span class="value">mail2sabir4@gmail.com</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="label">Location:</span>
+                                        <span class="value">Durgapur, West Bengal</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skills-progress glass-panel">
+                                <h4>Technical Skills</h4>
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <span>Python</span>
+                                        <span>96%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" data-width="96%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <span>Java</span>
+                                        <span>73%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" data-width="73%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <span>Unreal</span>
+                                        <span>76%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" data-width="76%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <span>Unity</span>
+                                        <span>68%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" data-width="68%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <span>C</span>
+                                        <span>66%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" data-width="66%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-section">
+                            <div class="education glass-panel">
+                                <h4>Education</h4>
+                                <div class="timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content">
+                                            <div class="timeline-date">2022 – Present</div>
+                                            <h5>Computer Science Student</h5>
+                                            <p>Dr. B. C. Roy Engineering College</p>
+                                            <span>Currently pursuing a degree focused on blending computer science fundamentals with creative and design-driven thinking.</span>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content">
+                                            <div class="timeline-date">2022</div>
+                                            <h5>AISSCE (Class 12)</h5>
+                                            <p>Kendriya Vidyalaya, CMERI</p>
+                                            <span>Completed higher secondary education under CBSE with strong foundations in mathematics and computer science.</span>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content">
+                                            <div class="timeline-date">2020</div>
+                                            <h5>CISCE (Class 10)</h5>
+                                            <p>Pranavananda Vidyamandir</p>
+                                            <span>Achieved 93.8% in the ICSE board exams. Developed strong academic foundation.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="experience glass-panel">
+                                <h4>Experience</h4>
+                                <div class="timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content">
+                                            <div class="timeline-date">Dec 2021 – Present</div>
+                                            <h5>Academic Tutor</h5>
+                                            <p>Self-Employed</p>
+                                            <span>Offer personalized academic support with custom lesson plans tailored to individual learning styles.</span>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content">
+                                            <div class="timeline-date">Nov 2023 – 2024</div>
+                                            <h5>Social Maven | Co-founder in Ai4ALL</h5>
+                                            <p>Non-profit Organization</p>
+                                            <span>Managed social media platforms and served as instructor during internship programs.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section class="section" id="skills">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">My Skills</h2>
+                        <div class="section-subtitle">What I can do for you</div>
+                    </div>
+
+                    <div class="skills-grid">
+                        <div class="skill-card glass-panel">
+                            <div class="skill-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h4>App Development</h4>
+                            <p>Creating mobile applications with modern frameworks and intuitive user interfaces for both iOS and Android platforms.</p>
+                        </div>
+                        <div class="skill-card glass-panel">
+                            <div class="skill-icon">
+                                <i class="fas fa-gamepad"></i>
+                            </div>
+                            <h4>Game Development</h4>
+                            <p>Designing and developing interactive games using Unity and Unreal Engine with immersive gameplay experiences.</p>
+                        </div>
+                        <div class="skill-card glass-panel">
+                            <div class="skill-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <h4>Graphic Design</h4>
+                            <p>Creating visually appealing graphics, logos, and brand identities with attention to modern design principles.</p>
+                        </div>
+                        <div class="skill-card glass-panel">
+                            <div class="skill-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                                <h4>Data Science</h4>
+                                <p>Analyzing and interpreting complex data to extract insights, build predictive models, and support data-driven decision making.</p>
+                        </div>
+                        <div class="skill-card glass-panel">
+                            <div class="skill-icon">
+                                <i class="fas fa-vr-cardboard"></i>
+                            </div>
+                            <h4>AR/VR Development</h4>
+                            <p>Creating immersive virtual and augmented reality experiences for various platforms and applications.</p>
+                        </div>
+                        <div class="skill-card glass-panel">
+                            <div class="skill-icon">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                            </div>
+                            <h4>Teaching</h4>
+                            <p>Sharing knowledge through personalized tutoring and educational content creation with proven results.</p>
+                        </div>
+                    </div>
+
+                    <!-- Tech Stack Section -->
+                    <div class="tech-stack-section">
+                        <h3>Tech Stack & Tools</h3>
+                        <div class="tech-categories">
+                            <div class="tech-category glass-panel">
+                                <h4><i class="fas fa-code"></i> Programming Languages</h4>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">Java</span>
+                                    <span class="tech-tag">C/C++</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">HTML5</span>
+                                    <span class="tech-tag">CSS3</span>
+                                    <span class="tech-tag">SQL</span>
+                                </div>
+                            </div>
+                            <div class="tech-category glass-panel">
+                                <h4><i class="fas fa-gamepad"></i> Game Development</h4>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">Unity</span>
+                                    <span class="tech-tag">Unreal Engine</span>
+                                    <span class="tech-tag">C#</span>
+                                    <span class="tech-tag">Blender</span>
+                                    <span class="tech-tag">3D Modeling</span>
+                                </div>
+                            </div>
+                            <div class="tech-category glass-panel">
+                                <h4><i class="fas fa-brain"></i> AI/ML & Data Science</h4>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">TensorFlow</span>
+                                    <span class="tech-tag">PyTorch</span>
+                                    <span class="tech-tag">Scikit-learn</span>
+                                    <span class="tech-tag">Pandas</span>
+                                    <span class="tech-tag">NumPy</span>
+                                    <span class="tech-tag">OpenCV</span>
+                                    <span class="tech-tag">Jupyter</span>
+                                </div>
+                            </div>
+                            <div class="tech-category glass-panel">
+                                <h4><i class="fas fa-mobile-alt"></i> Mobile & Web</h4>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">React Native</span>
+                                    <span class="tech-tag">Flutter</span>
+                                    <span class="tech-tag">Node.js</span>
+                                    <span class="tech-tag">Express</span>
+                                    <span class="tech-tag">MongoDB</span>
+                                    <span class="tech-tag">Firebase</span>
+                                </div>
+                            </div>
+                            <div class="tech-category glass-panel">
+                                <h4><i class="fas fa-palette"></i> Design & Creative</h4>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">Adobe Photoshop</span>
+                                    <span class="tech-tag">Adobe Illustrator</span>
+                                    <span class="tech-tag">Figma</span>
+                                    <span class="tech-tag">Canva</span>
+                                    <span class="tech-tag">UI/UX Design</span>
+                                </div>
+                            </div>
+                            <div class="tech-category glass-panel">
+                                <h4><i class="fas fa-cloud"></i> Cloud & DevOps</h4>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">Google Cloud</span>
+                                    <span class="tech-tag">AWS</span>
+                                    <span class="tech-tag">Docker</span>
+                                    <span class="tech-tag">Git</span>
+                                    <span class="tech-tag">GitHub</span>
+                                    <span class="tech-tag">Linux</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Certificates Section -->
+            <section class="section" id="certificates">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Certificates</h2>
+                        <div class="section-subtitle">My achievements and certifications</div>
+                    </div>
+
+                    <div class="certificates-grid" id="certificates-grid-container">
+                        </div>
+                </div>
+            </section>
+
+            <!-- Portfolio Section -->
+            <section class="section" id="portfolio">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">My Portfolio</h2>
+                        <div class="section-subtitle">Recent projects I've worked on</div>
+                    </div>
+
+                    <div class="portfolio-filter">
+                        <button class="filter-btn active glass-panel" data-filter="all">All Projects</button>
+                        <button class="filter-btn glass-panel" data-filter="web">Web</button>
+                        <button class="filter-btn glass-panel" data-filter="app">Mobile</button>
+                        <button class="filter-btn glass-panel" data-filter="game">Games</button>
+                        <button class="filter-btn glass-panel" data-filter="aiml">AIML</button>
+                    </div>
+
+                    <div class="portfolio-grid">
+                        <div class="portfolio-item glass-panel" data-category="all">
+                            <div class="portfolio-image">
+                                <img src="data\projects\project-1.png" alt="Sorting Algorithms Project">
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-info">
+                                        <h5>Sorting Algorithms in C</h5>
+                                        <p>Educational project demonstrating various sorting algorithms</p>
+                                        <div class="portfolio-links">
+                                            <a href="https://github.com/Sabircodr/sortAlgo" target="_blank" class="portfolio-link">
+                                                <i class="fas fa-external-link-alt"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item glass-panel" data-category="aiml">
+                            <div class="portfolio-image">
+                                <img src="https://images.pexels.com/photos/3912956/pexels-photo-3912956.jpeg?auto=compress&cs=tinysrgb&w=500" alt="AI/ML Project">
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-info">
+                                        <h5>AI Gesture Control</h5>
+                                        <p>Automatically controls basic computer tasks using hand gestures</p>
+                                        <div class="portfolio-links">
+                                            <a href="#" class="portfolio-link">
+                                                <i class="fas fa-clock"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item glass-panel" data-category="web">
+                            <div class="portfolio-image">
+                                <img src="data\projects\project-2.png" alt="ImmersioLab Project">
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-info">
+                                        <h5>ImmersioLab</h5>
+                                        <p>All-in-one platform featuring all the AR/VR projects developed by me and my buddies</p>
+                                        <div class="portfolio-links">
+                                            <a href="https://immersiolab.onrender.com/" target="_blank" class="portfolio-link">
+                                                <i class="fas fa-external-link-alt"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item glass-panel" data-category="app">
+                            <div class="portfolio-image">
+                                <img src="https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Coming Soon Project">
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-info">
+                                        <h5>Emotion Detection</h5>
+                                        <p>Coming Soon - Exciting aiml project in development</p>
+                                        <div class="portfolio-links">
+                                            <a href="#" class="portfolio-link">
+                                                <i class="fas fa-clock"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+
+                    <div class="planned-projects">
+                        <h3>Planned Projects</h3>
+                        <div class="planned-grid">
+                            <div class="planned-item glass-panel">
+                                <div class="planned-content">
+                                    <h5>Project Alpha</h5>
+                                    <p>Sign Language Detection using AIML</p>
+                                    <div class="progress-indicator">
+                                        <span>In Progress</span>
+                                        <div class="pulse"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="planned-item glass-panel">
+                                <div class="planned-content">
+                                    <h5>Project Gamma</h5>
+                                    <p>VR gaming platform using Unreal</p>
+                                    <div class="progress-indicator">
+                                        <span>In Progress</span>
+                                        <div class="pulse"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section class="section" id="contact">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Get In Touch</h2>
+                        <div class="section-subtitle">Let's work together</div>
+                    </div>
+
+                    <div class="contact-content">
+                        <div class="contact-text glass-panel">
+                            <h3>Have a project in mind?</h3>
+                            <p>I'm always interested in new opportunities and exciting projects. Whether you need help with web development, app creation, or any creative digital solution, I'm here to help bring your ideas to life.</p>
+                        </div>
+
+                        <div class="contact-info">
+                            <div class="contact-item glass-panel">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h5>Call Me</h5>
+                                    <p>+91 85099 50531</p>
+                                </div>
+                            </div>
+                            <div class="contact-item glass-panel">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h5>Email Me</h5>
+                                    <p>mail2sabir4@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-profiles">
+                            <h3>Connect with me</h3>
+                            <div class="social-grid">
+                                <a href="https://github.com/Sabircodr" target="_blank" class="social-card glass-panel">
+                                    <i class="fab fa-github"></i>
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="https://www.linkedin.com/in/sab1r-mallick" target="_blank" class="social-card glass-panel">
+                                    <i class="fab fa-linkedin"></i>
+                                    <span>LinkedIn</span>
+                                </a>
+                                <a href="https://www.hackerrank.com/profile/mail2sabir4" target="_blank" class="social-card glass-panel">
+                                    <i class="fab fa-hackerrank"></i>
+                                    <span>HackerRank</span>
+                                </a>
+                                <a href="https://www.codechef.com/users/sabir_mallick" target="_blank" class="social-card glass-panel">
+                                    <i class="fas fa-code"></i>
+                                    <span>CodeChef</span>
+                                </a>
+                                <a href="https://leetcode.com/u/sabir_mallick/" target="_blank" class="social-card glass-panel">
+                                    <i class="fas fa-laptop-code"></i>
+                                    <span>LeetCode</span>
+                                </a>
+                                <a href="https://buymeacoffee.com/sab1r" target="_blank" class="social-card glass-panel">
+                                    <i class="fas fa-mug-hot"></i>
+                                    <span>Buy Me Coffee</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Footer -->
+            <footer class="footer glass-panel">
+                <div class="container">
+                    <div class="footer-content">
+                        <div class="footer-brand">
+                            <h3>Sabir<span class="accent-text">.</span></h3>
+                            <p>Crafting digital experiences with passion and precision</p>
+                        </div>
+                        <div class="footer-links">
+                            <div class="footer-section">
+                                <h4>Quick Links</h4>
+                                <ul>
+                                    <li><a href="#home" data-section="home">Home</a></li>
+                                    <li><a href="#about" data-section="about">About</a></li>
+                                    <li><a href="#skills" data-section="skills">Skills</a></li>
+                                    <li><a href="#portfolio" data-section="portfolio">Portfolio</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-section">
+                                <h4>Connect</h4>
+                                <ul>
+                                    <li><a href="https://github.com/Sabircodr" target="_blank">GitHub</a></li>
+                                    <li><a href="https://www.linkedin.com/in/sab1r-mallick" target="_blank">LinkedIn</a></li>
+                                    <li><a href="mailto:mail2sabir4@gmail.com">Email</a></li>
+                                    <li><a href="tel:+918509950531">Phone</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <p>&copy; 2024 Sabir Mallick. All rights reserved.</p>
+                        <p>Made with <span class="heart">❤️</span> and lots of coffee</p>
+                    </div>
+                </div>
+            </footer>
+            </section>
+        </main>
+    </div>
+
+    <!-- Style Switcher -->
+    <div class="style-switcher glass-panel" id="styleSwitcher">
+        <div class="switcher-toggle" id="switcherToggle">
+            <i class="fas fa-cog"></i>
+        </div>
+        
+        <div class="switcher-content">
+            <div class="theme-toggle">
+                <button class="theme-btn" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            
+            <h4>Custom Color</h4>
+            <div class="color-picker-container">
+                <input type="color" id="colorPicker" value="#3b82f6">
+                <div class="color-preview" id="colorPreview"></div>
+            </div>
+            
+            <div class="preset-colors">
+                <h5>Quick Presets</h5>
+                <div class="preset-grid">
+                    <button class="preset-btn" data-color="#3b82f6" style="background: #3b82f6;"></button>
+                    <button class="preset-btn" data-color="#f97316" style="background: #f97316;"></button>
+                    <button class="preset-btn" data-color="#10b981" style="background: #10b981;"></button>
+                    <button class="preset-btn" data-color="#8b5cf6" style="background: #8b5cf6;"></button>
+                    <button class="preset-btn" data-color="#ef4444" style="background: #ef4444;"></button>
+                    <button class="preset-btn" data-color="#06b6d4" style="background: #06b6d4;"></button>
+                    <button class="preset-btn" data-color="#f59e0b" style="background: #f59e0b;"></button>
+                    <button class="preset-btn" data-color="#ec4899" style="background: #ec4899;"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top glass-panel" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Certificate Modal -->
+    <div class="certificate-modal-overlay" id="certificateModalOverlay">
+        <div class="certificate-modal glass-panel" id="certificateModal">
+            <div class="modal-header">
+                <h3 id="modalTitle">Certificate Details</h3>
+                <button class="modal-close" id="modalClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-content" id="modalContent">
+                <!-- Certificate content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup Notification -->
+    <div class="popup-overlay" id="popupOverlay"></div>
+    <div class="popup-notification glass-panel" id="popupNotification">
+        <div class="popup-icon">
+            <i class="fas fa-clock"></i>
+        </div>
+        <div class="popup-title">Coming Soon!</div>
+        <div class="popup-message">This project is currently in development. Stay tuned for updates!</div>
+        <button class="popup-close" id="popupClose">Got it!</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

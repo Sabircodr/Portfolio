@@ -9,10 +9,11 @@ const sidebar = document.getElementById('sidebar');
 const styleSwitcher = document.getElementById('styleSwitcher');
 const switcherToggle = document.getElementById('switcherToggle');
 const themeToggle = document.getElementById('themeToggle');
-const colorOptions = document.querySelectorAll('.color-option');
+const colorPicker = document.getElementById('colorPicker');
+const colorPreview = document.getElementById('colorPreview');
+const presetBtns = document.querySelectorAll('.preset-btn');
 const scrollTopBtn = document.getElementById('scrollTop');
 const typingText = document.getElementById('typingText');
-const contactForm = document.getElementById('contactForm');
 const filterBtns = document.querySelectorAll('.filter-btn');
 const portfolioItems = document.querySelectorAll('.portfolio-item');
 const progressFills = document.querySelectorAll('.progress-fill');
@@ -23,15 +24,21 @@ const popupOverlay = document.getElementById('popupOverlay');
 const popupNotification = document.getElementById('popupNotification');
 const popupClose = document.getElementById('popupClose');
 
+// Certificate modal elements
+const certificateModalOverlay = document.getElementById('certificateModalOverlay');
+const certificateModal = document.getElementById('certificateModal');
+const modalTitle = document.getElementById('modalTitle');
+const modalContent = document.getElementById('modalContent');
+const modalClose = document.getElementById('modalClose');
+
 // State
 let currentSection = 'home';
-let currentTheme = 'blue';
+let currentColor = '#3b82f6';
 let isDarkMode = document.body.classList.contains('dark');
 let typingIndex = 0;
 let isTypingForward = true;
 
 // Typing Animation
-//'Data Scientist',
 const professions = [
     'AIML Engineer',
     'AR/VR Developer',
@@ -39,7 +46,8 @@ const professions = [
     'Data Analyst',
     'Game Developer',
     'Graphic Designer',
-    'Educator'];
+    'Educator'
+];
     
 let professionIndex = 0;
 let charIndex = 0;
@@ -71,6 +79,220 @@ function typeText() {
     }
 }
 
+// Color Theme Functions
+function hexToRgb(hex) {
+    const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+    return result ? {
+        r: parseInt(result[1], 16),
+        g: parseInt(result[2], 16),
+        b: parseInt(result[3], 16)
+    } : null;
+}
+
+function generateColorVariations(baseColor) {
+    const rgb = hexToRgb(baseColor);
+    if (!rgb) return;
+    
+    // Generate darker variation for secondary color
+    const secondary = {
+        r: Math.max(0, rgb.r - 40),
+        g: Math.max(0, rgb.g - 40),
+        b: Math.max(0, rgb.b - 40)
+    };
+    
+    const secondaryHex = `#${secondary.r.toString(16).padStart(2, '0')}${secondary.g.toString(16).padStart(2, '0')}${secondary.b.toString(16).padStart(2, '0')}`;
+    
+    return {
+        primary: baseColor,
+        secondary: secondaryHex,
+        light: `rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, 0.1)`,
+        glow: `rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, 0.3)`
+    };
+}
+
+function updateThemeColors(color) {
+    const variations = generateColorVariations(color);
+    if (!variations) return;
+    
+    const root = document.documentElement;
+    
+    // Update CSS custom properties
+    root.style.setProperty('--accent-primary', variations.primary);
+    root.style.setProperty('--accent-secondary', variations.secondary);
+    root.style.setProperty('--accent-light', variations.light);
+    root.style.setProperty('--accent-glow', variations.glow);
+    root.style.setProperty('--accent-gradient', `linear-gradient(135deg, ${variations.primary} 0%, ${variations.secondary} 100%)`);
+    
+    // Update animated background orbs and meshes
+    updateAnimatedBackground(variations);
+    
+    // Update color preview
+    colorPreview.style.background = variations.primary;
+    
+    // Save to localStorage
+    localStorage.setItem('customColor', color);
+    currentColor = color;
+}
+
+function updateAnimatedBackground(variations) {
+    const orbs = document.querySelectorAll('.floating-orb');
+    const meshes = document.querySelectorAll('.mesh-gradient');
+    
+    orbs.forEach((orb, index) => {
+        const color = index % 2 === 0 ? variations.primary : variations.secondary;
+        orb.style.background = `radial-gradient(circle, ${color} 0%, transparent 70%)`;
+    });
+    
+    meshes.forEach((mesh, index) => {
+        if (index === 0) {
+            mesh.style.background = `conic-gradient(from 0deg, ${variations.primary}, ${variations.secondary}, ${variations.primary})`;
+        } else if (index === 1) {
+            mesh.style.background = `conic-gradient(from 180deg, ${variations.secondary}, ${variations.primary}, ${variations.secondary})`;
+        } else {
+            mesh.style.background = `conic-gradient(from 90deg, ${variations.primary}, ${variations.secondary}, ${variations.primary})`;
+        }
+    });
+}
+
+/*  Global Data & Initialization  */
+let certificatesData = null;
+
+// Load JSON immediately
+fetch('certificates.json')
+    .then(response => response.json())
+    .then(data => {
+        certificatesData = data;
+        generateCertificateCards(data); // Generate cards as soon as data loads
+        console.log("Certificates loaded and rendered.");
+    })
+    .catch(error => console.error('Error loading certificate data:', error));
+
+
+/*  Function to Generate Cards (Main Page)  */
+function generateCertificateCards(data) {
+    const container = document.getElementById('certificates-grid-container');
+    container.innerHTML = '';
+
+    Object.keys(data).forEach(key => {
+        const cert = data[key];
+        
+        // Logic: specific link if provided, otherwise standard '#'
+        const linkUrl = cert.verifyLink ? cert.verifyLink : '#';
+        const linkTarget = cert.verifyLink && cert.verifyLink !== '#' ? 'target="_blank"' : '';
+
+        const cardHTML = `
+            <div class="certificate-card glass-panel" data-cert="${key}">
+                <div class="certificate-icon">
+                    <i class="${cert.icon}"></i>
+                </div>
+                <div class="certificate-content">
+                    <h4>${cert.title}</h4>
+                    <p>${cert.description}</p>
+                    <div class="certificate-meta">
+                        <span class="cert-type">${cert.category}</span>
+                        <span class="cert-year">${cert.year}</span>
+                    </div>
+                    
+                    <div class="cert-actions">
+                        <button class="verify-btn" onclick="showCertificateModal('${key}')">
+                            <i class="fas fa-certificate"></i>
+                            View Details
+                        </button>
+                        
+                        <a href="${linkUrl}" ${linkTarget} class="verify-btn secondary">
+                            <i class="fas fa-shield-alt"></i>
+                            Verify
+                        </a>
+                    </div>
+                </div>
+            </div>
+        `;
+        container.innerHTML += cardHTML;
+    });
+}
+
+
+/*   Function to Show Modal (Details)  */
+function showCertificateModal(certType) {
+    const modalTitle = document.getElementById('modalTitle');
+    const modalContent = document.getElementById('modalContent');
+    const modalOverlay = document.getElementById('certificateModalOverlay');
+
+    if (!certificatesData) return;
+
+    const data = certificatesData[certType];
+
+    if (data) {
+        modalTitle.textContent = data.title;
+
+        // Helper to create list items
+        const listItemsHTML = data.listItems.map(item => `<li>${item}</li>`).join('');
+        const verificationHTML = data.verificationDetails.join('<br>');
+
+        modalContent.innerHTML = `
+            <div class="modal-header-section">
+                <div class="modal-icon-wrapper">
+                    <i class="${data.icon}"></i>
+                </div>
+                <h4 class="modal-cert-title">${data.title}</h4>
+            </div>
+
+            <div class="modal-image-wrapper">
+                <img src="${data.image}" alt="${data.title}" class="modal-cert-image">
+            </div>
+
+            <p class="modal-description">${data.description}</p>
+            
+            <div style="margin-bottom: 1.5rem;">
+                <h5 class="modal-list-title">${data.listTitle || 'Key Highlights'}:</h5>
+                <ul class="modal-list">
+                    ${listItemsHTML}
+                </ul>
+            </div>
+
+            <div class="modal-box-container">
+                <h5 class="modal-list-title">Verification Details:</h5>
+                <p class="modal-verification-text">
+                    ${verificationHTML}
+                </p>
+            </div>
+
+            <div class="modal-box-container">
+                <p class="modal-quote">"${data.quote}"</p>
+            </div>
+        `;
+
+        modalOverlay.classList.add('show');
+        document.body.style.overflow = 'hidden';
+    }
+}
+
+
+/*  Close Modal Logic  */
+document.addEventListener('DOMContentLoaded', () => {
+    const modalOverlay = document.getElementById('certificateModalOverlay');
+    const closeBtn = document.getElementById('modalClose');
+
+    function closeCertificateModal() {
+        modalOverlay.classList.remove('show');
+        document.body.style.overflow = '';
+    }
+
+    if (closeBtn) closeBtn.addEventListener('click', closeCertificateModal);
+    
+    if (modalOverlay) {
+        modalOverlay.addEventListener('click', (e) => {
+            if (e.target === modalOverlay) closeCertificateModal();
+        });
+    }
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modalOverlay.classList.contains('show')) {
+            closeCertificateModal();
+        }
+    });
+});
+
 // Initialize
 function init() {
     // Hide loading screen
@@ -84,8 +306,9 @@ function init() {
     // Start typing animation
     setTimeout(typeText, 2000);
 
-    // Initialize theme
-    document.body.setAttribute('data-theme', currentTheme);
+    // Initialize color picker
+    colorPicker.value = currentColor;
+    updateThemeColors(currentColor);
     
     // Initialize progress bars
     observeProgressBars();
@@ -162,22 +385,6 @@ function toggleTheme() {
     
     // Save to localStorage
     localStorage.setItem('isDarkMode', isDarkMode);
-}
-
-function changeTheme(theme) {
-    currentTheme = theme;
-    document.body.setAttribute('data-theme', theme);
-    
-    // Update active color option
-    colorOptions.forEach(option => {
-        option.classList.remove('active');
-        if (option.getAttribute('data-theme') === theme) {
-            option.classList.add('active');
-        }
-    });
-    
-    // Save to localStorage
-    localStorage.setItem('currentTheme', theme);
 }
 
 // Portfolio Filter Functions
@@ -262,11 +469,12 @@ function handleResize() {
 
 // Load Saved Preferences
 function loadPreferences() {
-    // Load theme preference
-    const savedTheme = localStorage.getItem('currentTheme');
-    if (savedTheme) {
-        currentTheme = savedTheme;
-        changeTheme(savedTheme);
+    // Load custom color preference
+    const savedColor = localStorage.getItem('customColor');
+    if (savedColor) {
+        currentColor = savedColor;
+        colorPicker.value = savedColor;
+        updateThemeColors(savedColor);
     }
     
     // Load dark mode preference
@@ -307,11 +515,17 @@ document.addEventListener('DOMContentLoaded', () => {
     switcherToggle.addEventListener('click', toggleStyleSwitcher);
     themeToggle.addEventListener('click', toggleTheme);
     
-    // Color option events
-    colorOptions.forEach(option => {
-        option.addEventListener('click', () => {
-            const theme = option.getAttribute('data-theme');
-            changeTheme(theme);
+    // Color picker events
+    colorPicker.addEventListener('input', (e) => {
+        updateThemeColors(e.target.value);
+    });
+    
+    // Preset color events
+    presetBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const color = btn.getAttribute('data-color');
+            colorPicker.value = color;
+            updateThemeColors(color);
         });
     });
     
@@ -329,6 +543,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // Popup events
     popupClose.addEventListener('click', hidePopup);
     popupOverlay.addEventListener('click', hidePopup);
+    
+    // Certificate modal events
+    modalClose.addEventListener('click', hideCertificateModal);
+    certificateModalOverlay.addEventListener('click', (e) => {
+        if (e.target === certificateModalOverlay) {
+            hideCertificateModal();
+        }
+    });
     
     // Add popup to "Coming Soon" portfolio items
     document.querySelectorAll('.portfolio-link').forEach(link => {
@@ -366,7 +588,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // Add some interactive animations
 function addInteractiveAnimations() {
     // Add hover effects to cards
-    const cards = document.querySelectorAll('.skill-card, .portfolio-item, .contact-item, .timeline-item, .planned-item');
+    const cards = document.querySelectorAll('.skill-card, .portfolio-item, .contact-item, .timeline-item, .planned-item, .certificate-card');
     
     cards.forEach(card => {
         card.addEventListener('mouseenter', function() {
@@ -455,3 +677,6 @@ function addSectionTransitions() {
 
 // Initialize section transitions
 document.addEventListener('DOMContentLoaded', addSectionTransitions);
+
+// Global function for certificate modal (called from HTML)
+window.showCertificateModal = showCertificateModal;

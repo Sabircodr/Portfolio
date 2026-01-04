@@ -1,0 +1,265 @@
+{
+  "google-cloud-foundations": {
+    "title": "Google Cloud Computing Foundations",
+    "category": "Cloud Computing",
+    "year": "2024",
+    "icon": "fab fa-google",
+    "image": "https://images.credly.com/size/340x340/images/4dda8ae4-99ee-476c-bca3-6f0adbab42fe/image.png",
+    "description": "Earned the foundational certification validating understanding of cloud concepts, big data, and machine learning on Google Cloud.",
+    "listTitle": "Core Skills",
+    "listItems": [
+      "Cloud Infrastructure & Security",
+      "Big Data & Machine Learning",
+      "Application Development",
+      "Google Cloud Console Mastery"
+    ],
+    "verificationDetails": [
+      "Issuer: Google Cloud",
+      "Verification: Credly Badge",
+      "Date: 2024"
+    ],
+    "verifyLink": "https://www.credly.com/badges/77ccc522-eb6c-4edf-9dfb-ff41a6e99a46/public_url",
+    "quote": "Validates ability to articulate the value of Google Cloud and demonstrate hands-on skills."
+  },
+  "cttc": {
+    "title": "CTTC Bhubaneswar",
+    "category": "Training",
+    "year": "2023",
+    "icon": "fas fa-industry",
+    "image": "data\\certificates\\CTTC.jpeg",
+    "description": "Industrial Training certification from Centre for Technology Transfer and Consultancy, Bhubaneswar.",
+    "listTitle": "Training Modules",
+    "listItems": [
+      "Industrial automation",
+      "Modern manufacturing technologies",
+      "Quality assurance"
+    ],
+    "verificationDetails": [
+      "Institution: CTTC Bhubaneswar",
+      "Duration: 6 weeks",
+      "Year: 2023"
+    ],
+    "verifyLink": "#",
+    "quote": "Invaluable exposure to industry standards."
+  },
+  "google-cloud-badges": {
+    "title": "Google Cloud Skills Badges",
+    "category": "Cloud & AI",
+    "year": "2024-Present",
+    "icon": "fas fa-award",
+    "image": "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=400",
+    "description": "Earned multiple specialized skill badges demonstrating practical proficiency in cutting-edge cloud technologies.",
+    "listTitle": "Specializations",
+    "listItems": [
+      "Generative AI Fundamentals",
+      "Security Operations",
+      "Conversation Design",
+      "Cloud Architecture"
+    ],
+    "verificationDetails": [
+      "Platform: Google Cloud Skills Boost",
+      "Status: Multiple Badges Earned",
+      "Focus: Practical Implementation"
+    ],
+    "verifyLink": "https://www.skills.google/public_profiles/9639c3a9-be48-4ae3-97ad-22ea115b14cd",
+    "quote": "Demonstrates commitment to continuous learning in specialized cloud domains."
+  },
+  "nptel-llm": {
+    "title": "Introduction to Large Language Models",
+    "category": "AI & GenAI",
+    "year": "2025",
+    "icon": "fas fa-robot",
+    "image": "data\\certificates\\llmS.jpeg",
+    "description": "Specialized certification from IIT Madras focusing on the architecture, training, and deployment of Large Language Models.",
+    "listTitle": "Curriculum Highlights",
+    "listItems": [
+      "Transformer Architectures",
+      "Prompt Engineering Strategies",
+      "Fine-tuning & Optimization",
+      "Ethical AI Deployment"
+    ],
+    "verificationDetails": [
+      "Institute: IIT Madras",
+      "Provider: NPTEL",
+      "Year: 2025"
+    ],
+    "verifyLink": "https://archive.nptel.ac.in/noc/",
+    "quote": "Represents cutting-edge knowledge in the rapidly evolving field of Generative AI."
+  },
+  "animate-hackathon": {
+    "title": "ANIMATE 2K24 Winner",
+    "category": "Hackathon",
+    "year": "2024",
+    "icon": "fas fa-film",
+    "image": "data\\certificates\\Fosee.jpeg",
+    "description": "Led the winning team at the online 2D animation hackathon organized by FOSSEE, IIT Bombay.",
+    "listTitle": "Key Achievements",
+    "listItems": [
+      "Honored at Whistling Woods International",
+      "Recognized by Director Vidhu Vinod Chopra",
+      "Recognized by Actor Vikrant Massey",
+      "Excellence in Creative Storytelling"
+    ],
+    "verificationDetails": [
+      "Organizer: FOSSEE, IIT Bombay",
+      "Event: ANIMATE 2K24",
+      "Role: Team Lead"
+    ],
+    "verifyLink": "#",
+    "quote": "A testament to creative vision and leadership in digital storytelling."
+  },
+  "bug-byte-league": {
+    "title": "Bug Byte League Winner",
+    "category": "Hackathon",
+    "year": "2024",
+    "icon": "fas fa-trophy",
+    "image": "data\\certificates\\hack.jpeg",
+    "description": "Winner of the GGS Hackathon for developing 'MediX Kit', an innovative healthcare solution.",
+    "listTitle": "Project Details",
+    "listItems": [
+      "Developed Affordable ECG Device",
+      "Portable Health Monitoring System",
+      "Mentored by Prof. Prasenjit Maji",
+      "Collaborated in Team of 4"
+    ],
+    "verificationDetails": [
+      "Event: GGS Hackathon",
+      "Project: MediX Kit",
+      "Role: Team Member"
+    ],
+    "verifyLink": "#",
+    "quote": "Demonstrates the ability to build impactful hardware-software solutions."
+  },
+  "nptel-ml": {
+    "title": "Introduction to Machine Learning",
+    "category": "AI & ML",
+    "year": "2023",
+    "icon": "fas fa-brain",
+    "image": "data\\certificates\\machineLearning.jpeg",
+    "description": "Elite Certification from IIT Kharagpur covering fundamental and advanced machine learning algorithms.",
+    "listTitle": "Key Concepts",
+    "listItems": [
+      "Supervised & Unsupervised Learning",
+      "Neural Networks",
+      "Clustering Algorithms",
+      "Model Evaluation Metrics"
+    ],
+    "verificationDetails": [
+      "Institute: IIT Kharagpur",
+      "Grade: Elite Certification",
+      "Year: 2023"
+    ],
+    "verifyLink": "https://archive.nptel.ac.in/noc/",
+    "quote": "Solid foundation in building and evaluating predictive models."
+  },
+  "nptel-python": {
+    "title": "Programming, DS & Algo in Python",
+    "category": "Programming",
+    "year": "2023",
+    "icon": "fab fa-python",
+    "image": "data\\certificates\\dsaPython.jpeg",
+    "description": "Elite + Silver Certification from IIT Madras. Mastered core programming, data structures, and algorithms.",
+    "listTitle": "Technical Skills",
+    "listItems": [
+      "Advanced Data Structures",
+      "Algorithm Optimization",
+      "Object-Oriented Programming",
+      "Computational Thinking"
+    ],
+    "verificationDetails": [
+      "Institute: IIT Madras",
+      "Grade: Elite + Silver",
+      "Year: 2023"
+    ],
+    "verifyLink": "https://archive.nptel.ac.in/noc/",
+    "quote": "Proven excellence in algorithmic problem solving and coding."
+  },
+  "nptel-data-analytics": {
+    "title": "Data Analytics with Python",
+    "category": "Data Science",
+    "year": "2025",
+    "icon": "fas fa-chart-line",
+    "image": "data\\certificates\\dataAnalytics.jpeg",
+    "description": "Certification from IIT Roorkee focusing on data analysis techniques, visualization, and statistical interpretation.",
+    "listTitle": "Analytical Skills",
+    "listItems": [
+      "Data Cleaning & Preprocessing",
+      "Statistical Analysis",
+      "Data Visualization",
+      "Exploratory Data Analysis"
+    ],
+    "verificationDetails": [
+      "Institute: IIT Roorkee",
+      "Provider: NPTEL",
+      "Year: 2025"
+    ],
+    "verifyLink": "https://archive.nptel.ac.in/noc/",
+    "quote": "Validates the ability to derive actionable insights from raw data."
+  },
+  "nptel-graphic-design": {
+    "title": "Introduction to Graphic Design",
+    "category": "Design",
+    "year": "2025",
+    "icon": "fas fa-pen-nib",
+    "image": "data\\certificates\\graphicDesign.jpeg",
+    "description": "Elite Certification from IIT Hyderabad exploring visual design principles and digital creativity.",
+    "listTitle": "Design Principles",
+    "listItems": [
+      "Typography & Color Theory",
+      "Layout & Composition",
+      "Visual Communication",
+      "User Experience Basics"
+    ],
+    "verificationDetails": [
+      "Institute: IIT Hyderabad",
+      "Grade: Elite Certification",
+      "Year: 2025"
+    ],
+    "verifyLink": "https://archive.nptel.ac.in/noc/",
+    "quote": "Bridges the gap between technical functionality and aesthetic user experience."
+  },
+  "nptel-soft-skills": {
+    "title": "Enhancing Soft Skills & Personality",
+    "category": "Professional",
+    "year": "2023",
+    "icon": "fas fa-user-tie",
+    "image": "data\\certificates\\softSkill.jpeg",
+    "description": "Elite Certification from IIT Kanpur focused on interpersonal communication and professional etiquette.",
+    "listTitle": "Key Takeaways",
+    "listItems": [
+      "Effective Communication",
+      "Interpersonal Dynamics",
+      "Professional Etiquette",
+      "Conflict Resolution"
+    ],
+    "verificationDetails": [
+      "Institute: IIT Kanpur",
+      "Grade: Elite Certification",
+      "Year: 2023"
+    ],
+    "verifyLink": "https://archive.nptel.ac.in/noc/",
+    "quote": "Essential training for effective communication and team collaboration."
+  },
+  "nptel-ethics": {
+    "title": "Ethics in Engineering Practice",
+    "category": "Professional",
+    "year": "2023",
+    "icon": "fas fa-balance-scale",
+    "image": "data\\certificates\\Ethics.jpeg",
+    "description": "Elite Certification from IIT Kharagpur on moral and ethical dilemmas in engineering.",
+    "listTitle": "Ethical Frameworks",
+    "listItems": [
+      "Professional Responsibility",
+      "Safety & Risk Assessment",
+      "Workplace Ethics",
+      "Sustainable Engineering"
+    ],
+    "verificationDetails": [
+      "Institute: IIT Kharagpur",
+      "Grade: Elite Certification",
+      "Year: 2023"
+    ],
+    "verifyLink": "https://archive.nptel.ac.in/noc/",
+    "quote": "Ensures a responsible and principled approach to engineering solutions."
+  }
+}
