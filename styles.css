@@ -34,7 +34,7 @@
     /* Spacing */
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
-    --spacing-md: 1.5rem;
+    --spacing-md: 1.1rem;
     --spacing-lg: 2rem;
     --spacing-xl: 3rem;
     --spacing-2xl: 4rem;
@@ -1232,6 +1232,7 @@ body {
     padding: var(--spacing-sm) 0;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    align-items: center;
 }
 
 .cert-type {
